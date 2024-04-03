@@ -23,6 +23,7 @@ const HeroSection = () => {
           <h2 className=" text-white-blue-shadow mb-4 text-xl sm:text-2xl lg:text-4xl lg:leading-normal font-medium">
             I'm <span className='font-extrabold'> Aram </span> a freelance{"\n"}
             <TypeAnimation
+            className="h-[82px] md:h-[40px] md:mt-4"
               sequence={[
                 "",
                 1000,
@@ -41,8 +42,9 @@ const HeroSection = () => {
                 fontSize: "36px",
                 fontFamily: "monospace",
                 lineHeight: "40px",
-                display:"block",
+                display:"inline-block",
                 width: "100%",
+                // height:"82px",
                 color: "#05F2AF",
                 overflow: "hidden",
               }}
@@ -50,7 +52,7 @@ const HeroSection = () => {
               speed={30}
               repeat={Infinity}
             />
-            {"\n"} based in Vancouver 
+            based in Vancouver 
           </h2>
           <div className="w-full sm:w-full">
             <Button className="md:basis-1/2 px-6 py-3 bg-pink-fairy-tale text-white hover:bg-slate-400 hover:text-black">
