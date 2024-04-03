@@ -1,3 +1,5 @@
+import { Rule } from '@sanity/types';
+
 const experience = {
     name: 'experience',
     title: 'Experience',
@@ -22,7 +24,7 @@ const experience = {
             name : 'yearsOfExperience',
             title: 'Years Of Experience',
             type: 'number',
-            validation: rule => rule.required().precision(1).positive()
+            validation: (rule:Rule)  => rule.required().precision(1).positive()
         },
 
     ]
